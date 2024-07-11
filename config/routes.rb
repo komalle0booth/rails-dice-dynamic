@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   get("dice/5/4", {:controller => "roll54", :action => "dg54"})
 
+  get("dice/:num_dice/:num_sides", {:controller =>"rolldice", :action => "dynamicdice"})
+
 end
